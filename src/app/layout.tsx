@@ -5,6 +5,7 @@ import "./globals.css";
 import Navigator from "./_components/navigator";
 import Footer from "./_components/footer";
 import AOSProvider from "./_components/aos_provider";
+import Head from "next/head";
 
 const pretendard = localFont({
   src: "../_fonts/PretendardVariable.woff2",
@@ -59,6 +60,16 @@ export default function RootLayout({
   
   return (
     <html lang="kr">
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="B1cLUEuE1_58I15e4oBIGl0gNmouuSg_g3dmaonB-aQ"
+        />
+        <meta
+          name="naver-site-verification"
+          content="44c86c4b69804de77981da4d1f7ab3ff86f973a2"
+        />
+      </Head>
       <body className={`${pretendard.variable} antialiased overflow-x-hidden`}>
         <AOSProvider>
           <Navigator />
