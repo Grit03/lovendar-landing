@@ -1,5 +1,4 @@
-import Link from "next/link";
-import Image from "next/image";
+"use client"
 
 import { Sour_Gummy } from "next/font/google";
 
@@ -10,7 +9,7 @@ const sourGummy = Sour_Gummy({
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-stone-600 py-6 px-6 text-white font-medium">
+    <footer className="w-full bg-[#e3e3e3] py-6 px-6 font-medium">
       <div className="flex items-center">
         Copyright © {new Date().getFullYear()} Lovendar-Team. All rights
         reserved.
